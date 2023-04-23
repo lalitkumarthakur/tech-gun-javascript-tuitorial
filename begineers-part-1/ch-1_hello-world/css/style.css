@@ -1,0 +1,31 @@
+@import url(https://fonts.bunny.net/css?family=poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(37, 138, 252, 0.100) 27.64%, rgba(136, 91, 255, 0.100) 43.42%, rgba(213, 23, 247, 0.100) 58.83%, rgba(246, 173, 109, 0.100) 81.81%);
+}
+
+.container {
+    padding: 1rem;
+}
+
+.common-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-heading {
+    font-weight: 500;
+    font-size: 2.3rem;
+    align-self: center;
+    display: flex;
+}
