@@ -29,11 +29,3 @@ body {
     align-self: center;
     display: flex;
 }
-
-.main-para {
-    margin-top: 1rem;
-}
-
-.second-para>ol {
-    margin-left: 1rem;
-}
