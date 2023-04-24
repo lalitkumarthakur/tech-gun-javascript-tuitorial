@@ -29,3 +29,62 @@ body {
     align-self: center;
     display: flex;
 }
+
+.main-para {
+    margin-top: 1rem;
+}
+
+.second-para>ol {
+    margin-left: 1rem;
+}
+
+.back-page {
+    margin: 1rem;
+    padding: 0.6rem 2.3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: rgb(2, 210, 2);
+    color: white;
+    border: none;
+    border-radius: 14px;
+}
+
+.back-page:hover {
+    background: rgb(38, 174, 38);
+    color: whitesmoke;
+    transition: 0.4s;
+}
+
+.home-page {
+    margin: 1rem;
+    padding: 0.6rem 2.3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: rgb(234, 216, 12);
+    color: white;
+    border: none;
+    border-radius: 14px;
+}
+
+.home-page:hover {
+    background: rgb(211, 219, 61);
+    color: whitesmoke;
+    transition: 0.4s;
+}
+
+.next-page {
+    margin: 1rem;
+    padding: 0.6rem 2.3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 14px;
+}
+
+.next-page:hover {
+    background: rgb(9, 9, 173);
+    color: whitesmoke;
+    transition: 0.4s;
+}
