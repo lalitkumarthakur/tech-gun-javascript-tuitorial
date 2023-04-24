@@ -1,0 +1,90 @@
+@import url(https://fonts.bunny.net/css?family=poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(37, 138, 252, 0.100) 27.64%, rgba(136, 91, 255, 0.100) 43.42%, rgba(213, 23, 247, 0.100) 58.83%, rgba(246, 173, 109, 0.100) 81.81%);
+}
+
+.container {
+    padding: 1rem;
+}
+
+.common-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-heading {
+    font-weight: 500;
+    font-size: 2.3rem;
+    align-self: center;
+    display: flex;
+}
+
+.main-para {
+    margin-top: 1rem;
+}
+
+.second-para>ol {
+    margin-left: 1rem;
+}
+
+.back-page {
+    margin: 1rem;
+    padding: 0.6rem 2.3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: rgb(2, 210, 2);
+    color: white;
+    border: none;
+    border-radius: 14px;
+}
+
+.back-page:hover {
+    background: rgb(38, 174, 38);
+    color: whitesmoke;
+    transition: 0.4s;
+}
+
+.home-page {
+    margin: 1rem;
+    padding: 0.6rem 2.3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: rgb(234, 216, 12);
+    color: white;
+    border: none;
+    border-radius: 14px;
+}
+
+.home-page:hover {
+    background: rgb(211, 219, 61);
+    color: whitesmoke;
+    transition: 0.4s;
+}
+
+.next-page {
+    margin: 1rem;
+    padding: 0.6rem 2.3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 14px;
+}
+
+.next-page:hover {
+    background: rgb(9, 9, 173);
+    color: whitesmoke;
+    transition: 0.4s;
+}
