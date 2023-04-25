@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Number Input Example</title>
+        <style>
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+  input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  #message {
+    margin-top: 10px;
+    color: red;
+    font-weight: bold;
+  }
+  
+  #results {
+    margin-top: 10px;
+  }
+        </style>
+    </head>
+    <body>
+        <h1>Number Input Example</h1>
+        <label for="number-input">Enter a number:</label>
+        <input type="text" id="number-input">
+        <div id="message"></div>
+        <div id="results"></div>
+        <script>
+      const input = document.getElementById('number-input');
+      const message = document.getElementById('message');
+      const results = document.getElementById('results');
+  input.addEventListener('input', () => {
+    let value = parseInt(input.value);
+    if (isNaN(value)) {
+      message.textContent = '';
+      results.innerHTML = '';
+      return;
+    }
+    
+    // Show message if value is negative
+    if (value < 0) {
+      message.textContent = 'Please enter a positive number.';
+      results.innerHTML = '';
+    } 
+    // Show next three even numbers if value is even
+    else if (value % 2 === 0) {
+      message.textContent = '';
+      results.innerHTML = '';
+      for (let i = 1; i <= 3; i++) {
+        const evenNumber = value + (2 * i);
+        results.innerHTML += `${evenNumber} `;
+      }
+    }
+    // Show next three odd numbers if value is odd
+    else {
+      message.textContent = '';
+      results.innerHTML = '';
+      for (let i = 1; i <= 3; i++) {
+        const oddNumber = value + (2 * i - 1);
+        results.innerHTML += `${oddNumber} `;
+      }
+    }
+  });
+        </script>
+    </body>
+</html>
