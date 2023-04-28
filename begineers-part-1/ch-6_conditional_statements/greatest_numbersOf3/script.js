@@ -28,4 +28,15 @@ function biggest_number() {
 	} else {
 		alert("Invalid enter! Please try again later.");
 	}
+
+	document.getElementById("submit-btn").addEventListener("click", redirectFunction);
+
+	function redirectFunction() {
+		window.location.href = "../greatest_numbersOf3/result.html";
+		// You can also use window.location.replace method
+
+		/*
+		 * window.location.replace("https://www.example.com");
+		 */
+	}
 }

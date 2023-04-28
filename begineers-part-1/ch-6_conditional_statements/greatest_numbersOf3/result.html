@@ -4,7 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Greatest of 3 numbers</title>
+		<title>Output</title>
+
 		<style>
 			.container {
 				padding: 2rem;
@@ -45,17 +46,17 @@
 				font-weight: 500;
 			}
 
-			.number-input input[type="number"] {
+			.number-input input[type="text"] {
 				padding: 1rem;
 				margin-top: 1rem;
 				border-radius: 5px;
 				border: 0px solid white;
 			}
 
-			.submit-btn {
+			.close-btn {
 				border-radius: 7px;
 				padding: 0.5rem 1rem;
-				background: blue;
+				background: rgb(0, 255, 68);
 				color: white;
 				border: 0;
 				margin: 2rem 0rem 2rem 11rem;
@@ -65,6 +66,10 @@
 				cursor: pointer;
 				outline: none;
 				transition: 0.2s all;
+			}
+
+			.close-btn:hover {
+				background: rgb(9, 214, 64);
 			}
 
 			.submit-btn:active {
@@ -78,48 +83,22 @@
 	<body>
 		<main class="container">
 			<div class="center-container">
-				<h1 class="main-heading">
-					Write a Program in Javascript to enter 3 unequal numbers and display
-					the greatest of the 3 numbers using promt() function.
-				</h1>
+				<h1 class="main-heading">Final Output</h1>
 			</div>
 
 			<div class="number-input">
-				<form onsubmit="biggest_number()" action="result.html" method="post">
-					<h3 class="fnumber">
-						Enter 1st Number :
-						<input
-							type="number"
-							placeholder="1st number"
-							id="fnumber"
-							autocomplete="on"
-							required />
-					</h3>
+				<h3 class="fnumber">
+					Greatest of 3 numbers =
+					<input
+						type="text"
+						id="final_number"
+						autocomplete="off"
+						name="output" />
+				</h3>
 
-					<h3 class="snumber">
-						Enter 2st Number :
-						<input
-							type="number"
-							placeholder="2nd number"
-							id="snumber"
-							autocomplete="on"
-							required />
-					</h3>
-
-					<h3 class="tnumber">
-						Enter 3st Number :
-						<input
-							type="number"
-							placeholder="3rd number"
-							id="tnumber"
-							autocomplete="on"
-							required />
-					</h3>
-
-					<!-- <div class="center-container"> -->
-					<button type="submit" class="submit-btn" id="submit-btn">SUBMIT</button>
-					<!-- </div> -->
-				</form>
+				<a href="index.html">
+					<button class="close-btn">CLOSE</button>
+				</a>
 			</div>
 		</main>
 		<script src="script.js"></script>
